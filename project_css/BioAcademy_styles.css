@@ -1,0 +1,69 @@
+a { 
+	color: rgb(50, 150, 116); 
+}
+
+h1{
+	color: rgb(49, 151, 116);
+	font-family: sans-serif;
+	font-size: 200%;
+	text-align: center;
+}
+
+/*серый фон страницы*/
+@body-bg: #f8f8f8; 
+/*специфический голубой фон данного дизайна*/
+@ brand-primary: #29c5e6; 
+/*фон панелей*/
+@panel-bg: #f3f3f3;
+/*цвет рамки панелей*/
+@panel-inner-border: #e7e7e7;
+/*убираем скругление у блоков*/
+@border-radius-base: 0;
+/*первичные кнопки имеют голубой фон*/
+@btn-primary-bg: @brand-primary; 
+/*если ширина экрана больше 992px, то ширина контейнера 960px*/
+@container-md: 960px; 
+/*если ширина экрана больше 1200px, то ширина контейнера так же 960px*/
+@container-lg: @container-md; 
+/*основным шрифтом будет Tahoma*/
+@font-family-base: Tahoma, sans-serif;
+/*задаем базовый размер*/
+@font-size-base: 12px; 
+/*основной цвет текста на странице*/
+@text-color: #8f8f8f;
+/*серый фон текстовых полей*/
+@input-bg: @panel-bg;
+/*сера€ рамка текстовых полей*/
+@input-border: @panel-inner-border;
+/*серый цвет текста в пол€х*/
+@input-color: #b2b2b2;
+
+.form-control {
+	box-shadow: none;
+}
+
+.btn {
+	font-family: sans-serif;
+	font-size: 10 px;
+}
+.navigation {
+		/*высота навигационного меню*/
+		height: 0px;
+		
+		font-family: sans-serif;
+		
+		/*задаем  побольше горизонтальный отступ*/
+		padding: 10px 30px;
+
+		/*цвет текста в пунктах меню*/
+		/*color: yellow;*/
+		background-color: #fff;
+
+		/*и при наведении мышки Ц такой же*/
+		navbar-default-link-color: #b2b2b2;
+		/*фон активного пункта меню Ц наш специфический голубой цвет*/
+		navbar-default-link-active-bg: #b2b2b2;
+
+		/*цвет текста активного пункта меню*/
+		navbar-default-link-active-color: #fff;
+}
